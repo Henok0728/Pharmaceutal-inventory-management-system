@@ -76,12 +76,12 @@ public class  BatchPanel extends JPanel{
 
         JPanel searchContainer = new JPanel(new FlowLayout(FlowLayout.LEFT));
         searchContainer.setOpaque(false);
-        searchContainer.add(new JLabel("🔍 Search: "));
+        searchContainer.add(new JLabel("Search: "));
         searchContainer.add(searchField);
         headerPanel.add(searchContainer, BorderLayout.WEST);
 
         // Add Button (Right)
-        JButton addBtn = new JButton("+ Register Supplier");
+        JButton addBtn = new JButton("Register Supplier");
         addBtn.setBackground(new Color(40, 167, 69));
         addBtn.setForeground(Color.WHITE);
         addBtn.setFocusPainted(false);
@@ -92,7 +92,7 @@ public class  BatchPanel extends JPanel{
         add(Box.createRigidArea(new Dimension(0, 10)));
 
         // --- SECTION 3: SUPPLIER DIRECTORY TABLE ---
-        add(createSectionPanel("📋 Supplier Directory", supplierDAO.getAllSuppliersModel()));
+        add(createSectionPanel("Supplier Directory", supplierDAO.getAllSuppliersModel()));
 
         add(Box.createVerticalGlue());
         this.revalidate();

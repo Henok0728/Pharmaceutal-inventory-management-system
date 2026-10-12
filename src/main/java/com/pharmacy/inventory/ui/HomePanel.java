@@ -73,18 +73,18 @@ public class HomePanel extends JPanel {
 
         // --- CRITICAL TEMPERATURE ALERT BAR ---
         if (temp > 25.0) {
-            add(createAlertBar("⚠️ CRITICAL TEMPERATURE ALERT: WAREHOUSE EXCEEDS 25°C - MEDICINE QUALITY AT RISK!"));
+            add(createAlertBar("CRITICAL TEMPERATURE ALERT: WAREHOUSE EXCEEDS 25°C - MEDICINE QUALITY AT RISK!"));
             add(Box.createRigidArea(new Dimension(0, 15)));
         }
 
         // --- SECTION 2: ALERTS & ACTIVITY ---
-        add(createSectionPanel("⚠️ Expiration Alerts (Within 30 days)", batchDAO.getExpiringBatchesModel()));
+        add(createSectionPanel("Expiration Alerts (Within 30 days)", batchDAO.getExpiringBatchesModel()));
         add(Box.createRigidArea(new Dimension(0, 20)));
 
-        add(createSectionPanel("📦 Reorder Alerts (Low Stock)", batchDAO.getLowStockBatchesModel()));
+        add(createSectionPanel("Reorder Alerts (Low Stock)", batchDAO.getLowStockBatchesModel()));
         add(Box.createRigidArea(new Dimension(0, 20)));
 
-        add(createSectionPanel("🛒 Today's Sales Activity", salesDAO.getTodaysSalesDetailsModel()));
+        add(createSectionPanel("Today's Sales Activity", salesDAO.getTodaysSalesDetailsModel()));
 
         add(Box.createVerticalGlue());
 

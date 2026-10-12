@@ -66,4 +66,8 @@ public class EnvironmentService {
     public static double getWarehouseTemp() { return warehouseTemp; }
     public static double getWarehouseHum() { return warehouseHum; }
     public static double getOutsideTemp() { return outsideTemp; }
+
+    // Convenience aliases
+    public static double getTemp() { return warehouseTemp; }
+    public static double getHum() { return warehouseHum; }
 }

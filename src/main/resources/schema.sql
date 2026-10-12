@@ -200,3 +200,10 @@ CREATE TABLE IF NOT EXISTS waste (
     CHECK (`reason` IN ('expired', 'damaged', 'recalled'))
     );
 CREATE INDEX idx_waste_batch ON waste (batch_id);
+
+-- 14. Initial Seed Users (for instant login on fresh database)
+INSERT IGNORE INTO users (name, email, password_hash, role) VALUES 
+('System Admin', 'admin@pharmacy.com', 'admin123', 'admin'),
+('Store Manager', 'manager@pharmacy.com', 'manager123', 'manager'),
+('Chief Pharmacist', 'pharmacist@pharmacy.com', 'pharmacist123', 'pharmacist'),
+('Counter Cashier', 'cashier@pharmacy.com', 'cashier123', 'cashier');
