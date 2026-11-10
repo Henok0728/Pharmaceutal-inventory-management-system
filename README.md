@@ -1,7 +1,11 @@
-# Pharmacetual Inventory Management System 
+# IOT-INTEGRATED Pharmacetual Inventory Management System 
 <div>
+<h5>Dashboard </h5>
 <img src="assets/1.png" width="50%" alt="1">
+<h5>Auth </h5>
 <img src="assets/2.png" width="50%" alt="2">
+<h5>Warehouse access system </h5>
+<img src="assets/3.png>" width="50%" alt="3">
 </div>
 
 # 📌 Overview
